@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        article {
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Exploring DOM</h1>
+            <article id="first-article">
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque mollitia
+                    quod minima voluptate sunt eos quasi velit hic, sequi explicabo, libero perspiciatis saepe doloribus
+                    magnam iure porro reprehenderit atque.</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Iusto mollitia unde blanditiis quod quis perspiciatis, dolor recusandae hic qui,
+                    beatae incidunt aperiam velit similique architecto soluta inventore quisquam sed eum nobis. Magnam
+                    enim cupiditate ducimus iure. Repellat, doloremque.</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Illum doloribus harum unde laudantium enim laboriosam nisi quo voluptas quasi
+                    quis temporibus non voluptatibus sequi, suscipit veritatis incidunt atque vero dolore similique
+                    vitae in nam inventore, eveniet eligendi. Odit.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <script>
+        //notun kisu add korte
+        const articles = document.getElementById('first-article');
+        const newAdd = document.createElement('p');
+        newAdd.innerHTML = 'This is added by JavaScript';
+        articles.appendChild(newAdd);
+    </script>
+</body>
+
+</html>
